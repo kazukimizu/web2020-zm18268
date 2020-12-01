@@ -1,5 +1,4 @@
-function hyoji2() {var str = "一文字ずつ表示します。"; 
-var cnt = document.timer2.moji2.value.length;
-if ( cnt < 11 ) { document.timer2.moji2.value = str.substr(0,cnt+1); }
-else { document.timer2.moji2.value = ""; }
-setTimeout("hyoji2()",1000); }
+function ChangeImageAndBack(){imgback();ThreeSecChange2();}
+function ThreeSecChange2(){setTimeout("imgchange2()",3000);}
+function imgchange2() {document.getElementById('img13').src = './image/josai.png';}
+function imgback() {document.getElementById('img13').src = './image/bulbon.gif';}
